@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	HTML
-%define	pnam	TableExtract
+%define		pdir	HTML
+%define		pnam	TableExtract
 Summary:	HTML::TableExtract - extracting the text contained in HTML tables
 Summary(pl):	HTML::TableExtract - wyci±ganie tekstu zawartego w tabelach HTML
 Name:		perl-HTML-TableExtract
