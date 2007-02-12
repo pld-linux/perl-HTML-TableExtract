@@ -6,7 +6,7 @@
 %define		pdir	HTML
 %define		pnam	TableExtract
 Summary:	HTML::TableExtract - extracting the text contained in HTML tables
-Summary(pl):	HTML::TableExtract - wyci±ganie tekstu zawartego w tabelach HTML
+Summary(pl.UTF-8):   HTML::TableExtract - wyciÄ…ganie tekstu zawartego w tabelach HTML
 Name:		perl-HTML-TableExtract
 Version:	2.10
 Release:	0.1
@@ -30,11 +30,11 @@ within an HTML document. The text from each extracted table is stored
 in tabe state objects which hold the information as an array of arrays
 that represent the rows and cells of that table.
 
-%description -l pl
-HTML::TableExtract to podklasa HTML::Parser, która s³u¿y do wyci±gania
-informacji tekstowych z tabel w dokumencie HTML. Tekst z ka¿dej tabeli
-jest zapisywany w obiektach, które przechowuj± informacje jako tablicê
-tablic, reprezentuj±c± wiersze i komórki tabeli.
+%description -l pl.UTF-8
+HTML::TableExtract to podklasa HTML::Parser, ktÃ³ra sÅ‚uÅ¼y do wyciÄ…gania
+informacji tekstowych z tabel w dokumencie HTML. Tekst z kaÅ¼dej tabeli
+jest zapisywany w obiektach, ktÃ³re przechowujÄ… informacje jako tablicÄ™
+tablic, reprezentujÄ…cÄ… wiersze i komÃ³rki tabeli.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
