@@ -6,7 +6,7 @@
 %define		pdir	HTML
 %define		pnam	TableExtract
 Summary:	HTML::TableExtract - extracting the text contained in HTML tables
-Summary(pl.UTF-8):   HTML::TableExtract - wyciąganie tekstu zawartego w tabelach HTML
+Summary(pl.UTF-8):	HTML::TableExtract - wyciąganie tekstu zawartego w tabelach HTML
 Name:		perl-HTML-TableExtract
 Version:	2.10
 Release:	0.1
