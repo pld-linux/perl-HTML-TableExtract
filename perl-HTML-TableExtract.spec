@@ -1,6 +1,6 @@
 #
 # Conditional build:
-%bcond_without	tests	# do not perform "make test"
+%bcond_with	tests	# perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	HTML
@@ -9,17 +9,19 @@ Summary:	HTML::TableExtract - extracting the text contained in HTML tables
 Summary(pl.UTF-8):	HTML::TableExtract - wyciąganie tekstu zawartego w tabelach HTML
 Name:		perl-HTML-TableExtract
 Version:	2.10
-Release:	0.1
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	e6e355f6049dc57706e719c5ce61ff39
+URL:		http://search.cpan.org/dist/HTML-TableExtract/
 BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
+BuildRequires:	perl(HTML::ElementTable) >= 1.16
 BuildRequires:	perl-HTML-Parser
 %endif
-BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
