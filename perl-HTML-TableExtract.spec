@@ -8,13 +8,13 @@
 Summary:	HTML::TableExtract - extracting the text contained in HTML tables
 Summary(pl.UTF-8):	HTML::TableExtract - wyciąganie tekstu zawartego w tabelach HTML
 Name:		perl-HTML-TableExtract
-Version:	2.10
+Version:	2.11
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	e6e355f6049dc57706e719c5ce61ff39
+# Source0-md5:	ac1b8fa092d53931a9f3fdbba330f5b0
 URL:		http://search.cpan.org/dist/HTML-TableExtract/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
