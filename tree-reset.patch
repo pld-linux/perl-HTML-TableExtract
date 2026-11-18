@@ -1,0 +1,13 @@
+# _reset_state() empties the TreeBuilder root through delete_content(), which
+# removes its _content slot; the following parse then builds an empty tree
+# in tree mode (t/30_tree.t 'mass html comp' fails with HTML::Tree 5.07).
+--- HTML-TableExtract-2.15/lib/HTML/TableExtract.pm
++++ HTML-TableExtract-2.15/lib/HTML/TableExtract.pm
+@@ -438,7 +438,6 @@
+   $self->{_counts}        = [];
+   $self->{_in_a_table}    = 0;
+   $self->{_parsing}       = 0;
+-  $self->tree->delete_content() if TREE();
+ }
+ 
+ sub _emsg {
